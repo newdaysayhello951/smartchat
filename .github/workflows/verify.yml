@@ -1,0 +1,45 @@
+name: verify
+on: [push, pull_request]
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r ai/requirements.txt pytest
+      - run: python scripts/setup-ai-models.py
+      - run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk libgl1 libglib2.0-0
+      - run: python -m pytest tests -q
+      - run: python scripts/evaluate.py
+      - run: npm ci && npm run build
+        working-directory: web
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cp .env.example .env
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/setup-ai-models.py
+      - run: docker compose up --build -d
+      - run: |
+          for i in $(seq 1 60); do
+            if curl -fsS http://localhost:8080/api/health; then exit 0; fi
+            sleep 2
+          done
+          exit 1
+      - run: python scripts/smoke.py
+      - run: python scripts/feature-smoke.py
+      - run: pip install httpx==0.28.1 && python scripts/product-smoke.py --url http://localhost:8080
+      - run: pip install httpx==0.28.1 && python scripts/upload-regression.py --url http://localhost:8080
+      - run: pip install websockets==14.1 && python scripts/ws_smoke.py
+      - if: always()
+        run: docker compose logs --no-color
+      - if: always()
+        run: docker compose down

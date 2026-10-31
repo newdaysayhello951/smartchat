@@ -1,0 +1,8 @@
+{
+ "version":"0.2.0",
+ "configurations":[
+   {"name":"C++：附加到 im_server.exe","type":"cppvsdbg","request":"attach","processId":"${command:pickProcess}"},
+   {"name":"前端：Edge 调试","type":"msedge","request":"launch","url":"http://localhost:8080","webRoot":"${workspaceFolder}/web"},
+   {"name":"AI：FastAPI 调试（先停止已有 AI 进程）","type":"debugpy","request":"launch","module":"uvicorn","args":["app:app","--app-dir","ai","--host","127.0.0.1","--port","8000"],"cwd":"${workspaceFolder}","python":"${workspaceFolder}/.venv/Scripts/python.exe","envFile":"${workspaceFolder}/.env","env":{"FILE_DIR":"${workspaceFolder}/data/files","INDEX_DIR":"${workspaceFolder}/data/index","PYTHONUTF8":"1"}}
+ ]
+}

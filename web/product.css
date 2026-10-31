@@ -1,0 +1,182 @@
+.product-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0 14px 12px;
+}
+.product-buttons > button {
+  font-size: 10px;
+  padding: 6px 8px;
+  background: #dfe8d8;
+  border-radius: 5px;
+  color: #53734b;
+  position: relative;
+}
+.product-buttons b {
+  display: inline-block;
+  background: #d86559;
+  color: white;
+  border-radius: 10px;
+  font-size: 9px;
+  padding: 1px 5px;
+  margin-left: 5px;
+}
+.product-modal {
+  width: min(550px, 95vw);
+  max-height: 85vh;
+  overflow: auto;
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 20px 90px #1115;
+  color: #263b2a;
+}
+.product-modal > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7eddf;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.product-modal h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.product-modal header > button {
+  font-size: 25px;
+}
+.product-modal label {
+  display: block;
+  margin: 12px 0;
+}
+.product-modal input {
+  font-size: 13px;
+}
+.product-modal .inline-form {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+.product-modal .inline-form button {
+  white-space: nowrap;
+}
+.product-modal .person-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf1e7;
+  font-size: 12px;
+}
+.person-row > span:nth-child(2) {
+  flex: 1;
+}
+.product-modal .person-row button {
+  font-size: 10px;
+  padding: 7px 10px;
+}
+.product-modal h4 {
+  font-size: 13px;
+  margin: 25px 0 10px;
+}
+.request-row {
+  background: #f4f8f0;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 12px;
+}
+.request-row p {
+  margin: 8px 0 12px;
+  color: #85927c;
+}
+.request-row button {
+  margin-right: 12px;
+  font-size: 11px;
+}
+.request-status {
+  font-size: 11px;
+  color: #8b9880;
+  margin: 8px 0;
+}
+.member-choices {
+  max-height: 250px;
+  overflow: auto;
+  margin: 15px 0;
+}
+.member-choices label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.member-choices input {
+  width: auto;
+  margin: 0;
+}
+.danger {
+  background: #fff0eb;
+  color: #ad5c48;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.recall-button {
+  font-size: 9px;
+  margin-left: 9px;
+  color: #7a9470;
+  text-decoration: underline;
+}
+.chat-title h2 > small {
+  font-size: 11px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.citation-check {
+  font-size: 11px;
+  line-height: 1.8;
+  background: #edf6e6;
+  border-radius: 7px;
+  padding: 12px;
+  margin: 15px 0;
+  color: #66855b;
+}
+.citation-check.warning {
+  background: #fff5e6;
+  color: #a17a42;
+}
+.rtc-diagnostics {
+  font-size: 11px;
+  background: #eff5e9;
+  padding: 12px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.rtc-diagnostics pre {
+  font-size: 10px;
+  white-space: pre-wrap;
+  max-height: 160px;
+  overflow: auto;
+}
+@media (max-width: 650px) {
+  .product-buttons {
+    padding: 0 20px 12px;
+  }
+  .product-buttons > button {
+    font-size: 11px;
+  }
+  .product-modal {
+    padding: 18px;
+  }
+  .composer-tools {
+    flex-wrap: wrap;
+  }
+  .composer-tools small {
+    font-size: 9px;
+  }
+}

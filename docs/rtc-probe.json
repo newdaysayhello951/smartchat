@@ -1,0 +1,12 @@
+{
+  "secureContext": true,
+  "mediaSupported": true,
+  "turnConfigured": false,
+  "candidateTypes": [
+    "host",
+    "srflx"
+  ],
+  "relayAllocation": false,
+  "errors": [],
+  "note": "尚未配置 TURN。当前只能测试直连候选，不能保证跨运营商通话。"
+}

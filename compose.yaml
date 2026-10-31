@@ -1,0 +1,61 @@
+services:
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: im
+      MYSQL_USER: im
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?copy .env.example to .env first}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?set MYSQL_ROOT_PASSWORD}
+    volumes:
+      - mysql:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, 'MYSQL_PWD="$$MYSQL_PASSWORD" mysql -uim -e "SELECT 1" im']
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+  ai:
+    build: ./ai
+    environment:
+      INTERNAL_SECRET: ${INTERNAL_SECRET:?set INTERNAL_SECRET}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.deepseek.com}
+      LLM_MODEL: ${LLM_MODEL:-deepseek-flash}
+    volumes:
+      - files:/data/files:ro
+      - index:/data/index
+      - ./data/models:/data/models:ro
+    restart: unless-stopped
+  server:
+    build: ./server
+    environment:
+      DB_HOST: db
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+      INTERNAL_SECRET: ${INTERNAL_SECRET}
+      RTC_STUN_URL: ${RTC_STUN_URL:-stun:stun.l.google.com:19302}
+      TURN_URL: ${TURN_URL:-}
+      TURN_SECRET: ${TURN_SECRET:-}
+      TURN_USERNAME: ${TURN_USERNAME:-}
+      TURN_PASSWORD: ${TURN_PASSWORD:-}
+    volumes:
+      - files:/data/files
+    depends_on:
+      db:
+        condition: service_healthy
+      ai:
+        condition: service_started
+    restart: unless-stopped
+    stop_grace_period: 15s
+  web:
+    build: ./web
+    ports:
+      - '127.0.0.1:${APP_PORT:-8080}:80'
+    depends_on:
+      - server
+    restart: unless-stopped
+volumes:
+  mysql:
+  files:
+  index:

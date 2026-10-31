@@ -1,0 +1,289 @@
+{
+  "type": "lexical retrieval only; not answer quality",
+  "questions": 30,
+  "positive_recall_at_1": 1.0,
+  "positive_recall_at_6": 1.0,
+  "negative_rejection_rate": 1.0,
+  "results": [
+    {
+      "question": "杭州旅行预算多少",
+      "expected": "budget",
+      "top_ids": [
+        "budget",
+        "traffic",
+        "payment"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "住宿预算多少元",
+      "expected": "budget",
+      "top_ids": [
+        "budget",
+        "hotel"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "交通预算多少元",
+      "expected": "budget",
+      "top_ids": [
+        "budget",
+        "traffic"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "出行时间是什么时候",
+      "expected": "time",
+      "top_ids": [
+        "time",
+        "payment"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "周六几点集合",
+      "expected": "time",
+      "top_ids": [
+        "time"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "集合地点在哪里",
+      "expected": "time",
+      "top_ids": [
+        "time"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "住宿选择哪家酒店",
+      "expected": "hotel",
+      "top_ids": [
+        "hotel",
+        "food",
+        "budget"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "谁负责订酒店",
+      "expected": "hotel",
+      "top_ids": [
+        "hotel"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "酒店预订什么房型",
+      "expected": "hotel",
+      "top_ids": [
+        "hotel"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "杭州交通方案",
+      "expected": "traffic",
+      "top_ids": [
+        "traffic",
+        "budget",
+        "weather"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "高铁到哪个站",
+      "expected": "traffic",
+      "top_ids": [
+        "traffic"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "市内交通怎么安排",
+      "expected": "traffic",
+      "top_ids": [
+        "traffic",
+        "budget"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "谁不吃辣",
+      "expected": "food",
+      "top_ids": [
+        "food"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "谁对花生过敏",
+      "expected": "food",
+      "top_ids": [
+        "food",
+        "file"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "餐饮偏好有哪些",
+      "expected": "food",
+      "top_ids": [
+        "food",
+        "budget"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "下雨备用方案",
+      "expected": "weather",
+      "top_ids": [
+        "weather",
+        "traffic",
+        "privacy"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "下雨参观什么博物馆",
+      "expected": "weather",
+      "top_ids": [
+        "weather"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "工作线程有多少",
+      "expected": "network",
+      "top_ids": [
+        "network"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "任务队列上限",
+      "expected": "network",
+      "top_ids": [
+        "network"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "连接上限多少",
+      "expected": "network",
+      "top_ids": [
+        "network"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "文件大小限制",
+      "expected": "file",
+      "top_ids": [
+        "file",
+        "privacy"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "支持哪些文件类型",
+      "expected": "file",
+      "top_ids": [
+        "file",
+        "privacy"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "旅行费用谁先垫付",
+      "expected": "payment",
+      "top_ids": [
+        "payment",
+        "budget"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "费用如何分摊",
+      "expected": "payment",
+      "top_ids": [
+        "payment"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "谁能下载会话文件",
+      "expected": "privacy",
+      "top_ids": [
+        "privacy",
+        "file"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "资料索引怎么隔离",
+      "expected": "privacy",
+      "top_ids": [
+        "privacy"
+      ],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "quantum orbital mechanics",
+      "expected": null,
+      "top_ids": [],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "意大利签证护照有效期",
+      "expected": null,
+      "top_ids": [],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "GPU显存规格",
+      "expected": null,
+      "top_ids": [],
+      "hit_at_1": true,
+      "hit_at_6": true
+    },
+    {
+      "question": "股票分红收益率",
+      "expected": null,
+      "top_ids": [],
+      "hit_at_1": true,
+      "hit_at_6": true
+    }
+  ]
+}

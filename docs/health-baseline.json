@@ -1,0 +1,10 @@
+{
+  "endpoint": "/api/health",
+  "requests": 200,
+  "concurrency": 8,
+  "seconds": 1.349,
+  "rps": 148.26,
+  "p50_ms": 15.56,
+  "p95_ms": 36.85,
+  "errors": 0
+}

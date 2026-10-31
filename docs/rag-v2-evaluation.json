@@ -1,0 +1,739 @@
+{
+  "dataset": "26 labeled paraphrases over real project documents; 22 answerable, 4 absent",
+  "sources": [
+    "docs/upgrade-v2.md",
+    "docs/deepseek.md",
+    "docs/sharing.md"
+  ],
+  "model": "local multilingual MiniLM 384d + lexical",
+  "recall_at_1": 0.8182,
+  "recall_at_6": 0.9545,
+  "negative_rejection_rate": 1.0,
+  "results": [
+    {
+      "question": "第一次私聊前，对方必须先做什么？",
+      "gold_evidence": "需要对方同意好友申请",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.1712
+        }
+      ]
+    },
+    {
+      "question": "发起申请的人能不能自己批准加好友？",
+      "gold_evidence": "只有申请接收方",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.31
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 4,
+          "score": 0.1615
+        }
+      ]
+    },
+    {
+      "question": "群主不想留在群里，退出前要怎么处理？",
+      "gold_evidence": "先转让再退出",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.3306
+        }
+      ]
+    },
+    {
+      "question": "一个聊天群可以容纳多少个人？",
+      "gold_evidence": "最多 50 人",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.3583
+        }
+      ]
+    },
+    {
+      "question": "被踢出群以后还可以读取群里的附件吗？",
+      "gold_evidence": "立即失去",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.3922
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.2787
+        },
+        {
+          "name": "deepseek.md",
+          "chunk": 4,
+          "score": 0.2115
+        }
+      ]
+    },
+    {
+      "question": "发错的消息在多久之内允许收回？",
+      "gold_evidence": "两分钟",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.2931
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.2835
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 5,
+          "score": 0.2726
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 4,
+          "score": 0.1664
+        }
+      ]
+    },
+    {
+      "question": "换了密码之后其他手机上的登录还有效吗？",
+      "gold_evidence": "旧设备令牌全部失效",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.341
+        }
+      ]
+    },
+    {
+      "question": "新上传方式能发送多大的文件？",
+      "gold_evidence": "最大 1 GB",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.3898
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 3,
+          "score": 0.3862
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.2607
+        }
+      ]
+    },
+    {
+      "question": "上传时每一块文件的体积是多少？",
+      "gold_evidence": "4 MB",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.3948
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 3,
+          "score": 0.3629
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 4,
+          "score": 0.3311
+        }
+      ]
+    },
+    {
+      "question": "传输过程中用什么算法检查内容有没有损坏？",
+      "gold_evidence": "SHA-256",
+      "hit_at_1": false,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 5,
+          "score": 0.373
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 6,
+          "score": 0.3597
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 7,
+          "score": 0.3533
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.3482
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 4,
+          "score": 0.3441
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 3,
+          "score": 0.3028
+        }
+      ]
+    },
+    {
+      "question": "浏览器页面刷新了，怎样继续没有发完的附件？",
+      "gold_evidence": "重新选择同一文件",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.3795
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 3,
+          "score": 0.36
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 3,
+          "score": 0.2985
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 4,
+          "score": 0.2371
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 5,
+          "score": 0.2145
+        }
+      ]
+    },
+    {
+      "question": "旧的单次请求接口是否仍有限制？",
+      "gold_evidence": "50 MB",
+      "hit_at_1": false,
+      "hit_at_6": false,
+      "top_sources": [
+        {
+          "name": "deepseek.md",
+          "chunk": 5,
+          "score": 0.3824
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 5,
+          "score": 0.3806
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 3,
+          "score": 0.377
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 4,
+          "score": 0.3749
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.3689
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 6,
+          "score": 0.3681
+        }
+      ]
+    },
+    {
+      "question": "下载一个大附件会一次性占用服务器一整个文件的内存吗？",
+      "gold_evidence": "小缓冲区",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.4908
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 3,
+          "score": 0.4554
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 1,
+          "score": 0.3311
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 3,
+          "score": 0.3102
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.2993
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 4,
+          "score": 0.2781
+        }
+      ]
+    },
+    {
+      "question": "现在的语义向量有多少个维度？",
+      "gold_evidence": "384 维",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 4,
+          "score": 0.2983
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 3,
+          "score": 0.203
+        }
+      ]
+    },
+    {
+      "question": "图片里的汉字通过什么软件识别？",
+      "gold_evidence": "RapidOCR",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 4,
+          "score": 0.321
+        }
+      ]
+    },
+    {
+      "question": "全是扫描图像的 PDF 最多能识别多少页？",
+      "gold_evidence": "扫描 PDF 最多 40 页",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 4,
+          "score": 0.3898
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 5,
+          "score": 0.1731
+        }
+      ]
+    },
+    {
+      "question": "一张图片的像素数量限制是多少？",
+      "gold_evidence": "3000 万像素",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 4,
+          "score": 0.3117
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 3,
+          "score": 0.199
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 5,
+          "score": 0.1877
+        }
+      ]
+    },
+    {
+      "question": "引用核验怎样确认模型给出的证据真的来自资料？",
+      "gold_evidence": "逐字片段",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 4,
+          "score": 0.3891
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 5,
+          "score": 0.346
+        },
+        {
+          "name": "deepseek.md",
+          "chunk": 5,
+          "score": 0.2715
+        },
+        {
+          "name": "deepseek.md",
+          "chunk": 6,
+          "score": 0.2337
+        }
+      ]
+    },
+    {
+      "question": "当前已经有公网音视频中转服务了吗？",
+      "gold_evidence": "没有 TURN 服务",
+      "hit_at_1": false,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "sharing.md",
+          "chunk": 5,
+          "score": 0.386
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 6,
+          "score": 0.3458
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 7,
+          "score": 0.3191
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 5,
+          "score": 0.3152
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 1,
+          "score": 0.3129
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.2985
+        }
+      ]
+    },
+    {
+      "question": "API 用哪个标准名称调用 V4.1 Flash？",
+      "gold_evidence": "deepseek-flash",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "deepseek.md",
+          "chunk": 2,
+          "score": 0.427
+        },
+        {
+          "name": "deepseek.md",
+          "chunk": 1,
+          "score": 0.3958
+        },
+        {
+          "name": "deepseek.md",
+          "chunk": 5,
+          "score": 0.2277
+        }
+      ]
+    },
+    {
+      "question": "模型密钥应该放在哪里读取？",
+      "gold_evidence": "密钥仅由 Python 后端读取",
+      "hit_at_1": false,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "deepseek.md",
+          "chunk": 6,
+          "score": 0.3552
+        },
+        {
+          "name": "deepseek.md",
+          "chunk": 1,
+          "score": 0.3054
+        }
+      ]
+    },
+    {
+      "question": "哪一个文件能关掉对外分享、但保留本机聊天？",
+      "gold_evidence": "Stop-Sharing.cmd",
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": [
+        {
+          "name": "sharing.md",
+          "chunk": 2,
+          "score": 0.4551
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 1,
+          "score": 0.4506
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 2,
+          "score": 0.4499
+        },
+        {
+          "name": "sharing.md",
+          "chunk": 3,
+          "score": 0.4151
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 3,
+          "score": 0.4069
+        },
+        {
+          "name": "upgrade-v2.md",
+          "chunk": 1,
+          "score": 0.4004
+        }
+      ]
+    },
+    {
+      "question": "九寨沟今天的门票现价是多少？",
+      "gold_evidence": null,
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": []
+    },
+    {
+      "question": "查一下北京明天具体几点下雨。",
+      "gold_evidence": null,
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": []
+    },
+    {
+      "question": "这个月哪支股票会涨停？",
+      "gold_evidence": null,
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": []
+    },
+    {
+      "question": "2027 年世界杯冠军是谁？",
+      "gold_evidence": null,
+      "hit_at_1": true,
+      "hit_at_6": true,
+      "top_sources": []
+    }
+  ],
+  "real_model_answers": [
+    {
+      "question": "第一次私聊前，对方必须先做什么？",
+      "answer": "第一次私聊前，对方必须先同意好友申请。资料说明“新建一对一会话前需要对方同意好友申请”[1]。",
+      "citation_check": {
+        "status": "passed",
+        "referenced_ids": [
+          1
+        ],
+        "invalid_ids": [],
+        "note": "编号及来源范围校验，不等于事实正确性保证",
+        "grounding": "supported",
+        "evidence": [
+          {
+            "citation_id": 1,
+            "quote": "新建一对一会话前需要对方同意好友申请"
+          }
+        ],
+        "issues": []
+      },
+      "sources": [
+        {
+          "id": 1,
+          "name": "upgrade-v2.md",
+          "text": "# 青聊第二版功能说明\n\n## 好友、群聊和账号\n\n新建一对一会话前需要对方同意好友申请；既有单聊历史仍保留。通讯录显示已接受的好友，添加好友窗口按用户名查找注册用户。只有申请接收方可以同意或拒绝申请。\n\n创建群聊时只能邀请自己的好友，最多 50 人。群主可邀请、移出成员、改群名或转让群主；普通成员可退出。群主必须先转让再退出。入群后可查看群历史，退出或被移出后立即失去该会话消息、文件和 AI 资料的访问权限。当前音视频仍为一对一，不是群视频会议。\n\n发送者可撤回两分钟内的消息；其他成员会通过变更事件同步看到撤回提示。撤回清除消息正文与附件链接，但不等同于删除整个共享文件库中的原附件。修改密码需验证原密码，旧设备令牌全部失效，当前窗口接收新令牌。\n\n## 大文件与续传\n\n新版界面将文件拆为 4 MB 分片，最大"
+        }
+      ]
+    },
+    {
+      "question": "传输过程中用什么算法检查内容有没有损坏？",
+      "answer": "传输过程中使用 **SHA-256** 校验：文件被拆为 4 MB 分片，每片做 SHA-256 校验，服务端对合并内容再次校验[4]。",
+      "citation_check": {
+        "status": "passed",
+        "referenced_ids": [
+          4
+        ],
+        "invalid_ids": [],
+        "note": "编号及来源范围校验，不等于事实正确性保证",
+        "grounding": "supported",
+        "evidence": [
+          {
+            "citation_id": 4,
+            "quote": "新版界面将文件拆为 4 MB 分片，最大 1 GB。每片做 SHA-256 校验，服务端对合并内容再次校验"
+          }
+        ],
+        "issues": []
+      },
+      "sources": [
+        {
+          "id": 1,
+          "name": "upgrade-v2.md",
+          "text": " 40 页，单图最多 3000 万像素。OCR 文字和普通文件一样分块、按会话建立索引，可用于 RAG 与 Agent。音频转写和视频内容理解仍未实现。\n\n回答包含引用编号校验；RAG 问答额外调用一次模型核验事实依据，并检查核验返回的证据是否为来源原文的逐字片段。它是辅助核验，不保证模型事实绝对正确；界面会显示通过、需复核或未完成核验的状态。Agent 展示引用编号检查和真实工具执行记录。\n\n## TURN 与真实跨设备验收\n\n界面提供“音视频网络诊断”，不调用个人麦克风或摄像头。配置 TURN 后强制收集中继候选；只有实际收到 relay 候选才报告分配成功。可使用 TURN shared secret，或托管服务提供的 TURN_USERNAME / TURN_PASSWORD。\n\n当前用户没有 TURN"
+        },
+        {
+          "id": 2,
+          "name": "upgrade-v2.md",
+          "text": "跨设备验收\n\n界面提供“音视频网络诊断”，不调用个人麦克风或摄像头。配置 TURN 后强制收集中继候选；只有实际收到 relay 候选才报告分配成功。可使用 TURN shared secret，或托管服务提供的 TURN_USERNAME / TURN_PASSWORD。\n\n当前用户没有 TURN 服务，因此不能宣称已完成公网中继部署或不同运营商的真实设备验收。`deploy/turnserver.conf.example` 是公网 coturn 主机配置模板，HTTP 内网穿透不提供该中继能力。\n\n取得中继后：填写 `.env` 的 TURN_URL 和 TURN_SECRET（或用户名密码），重载 C++ 服务；在诊断中确认 relay 分配，再用电脑与手机分别连接不同网络，实测双向声音、画面、静音、挂断"
+        },
+        {
+          "id": 3,
+          "name": "upgrade-v2.md",
+          "text": "mple` 是公网 coturn 主机配置模板，HTTP 内网穿透不提供该中继能力。\n\n取得中继后：填写 `.env` 的 TURN_URL 和 TURN_SECRET（或用户名密码），重载 C++ 服务；在诊断中确认 relay 分配，再用电脑与手机分别连接不同网络，实测双向声音、画面、静音、挂断和断网恢复。此步骤仍需真实外部资源和第二台设备。"
+        },
+        {
+          "id": 4,
+          "name": "upgrade-v2.md",
+          "text": "视频仍为一对一，不是群视频会议。\n\n发送者可撤回两分钟内的消息；其他成员会通过变更事件同步看到撤回提示。撤回清除消息正文与附件链接，但不等同于删除整个共享文件库中的原附件。修改密码需验证原密码，旧设备令牌全部失效，当前窗口接收新令牌。\n\n## 大文件与续传\n\n新版界面将文件拆为 4 MB 分片，最大 1 GB。每片做 SHA-256 校验，服务端对合并内容再次校验；相同用户、会话、文件名和内容重复初始化会返回同一个任务，已完成分片不重传。暂停后可在当前页面继续，刷新后重新选择同一文件也可恢复；浏览器不会偷偷保留个人文件读取权限。\n\n下载改为服务端流式传输，单连接使用小缓冲区，不将整个 1 GB 文件一次读入服务器内存。Chrome / Edge 支持的本地文件保存接口可暂停并继续下载，新版上传文件的已保存分片会"
+        },
+        {
+          "id": 5,
+          "name": "upgrade-v2.md",
+          "text": "。\n\n## 语义检索、OCR 与引用\n\n采用本地多语言 MiniLM 量化 ONNX 模型，生成 384 维语义向量；与原词法分数混合排序。没有模型文件时明确报错，不假装完成语义检索。安装依赖后运行 `python scripts/setup-ai-models.py` 下载模型。\n\n图片文字使用本地 RapidOCR 识别，支持中文和英文。文字 PDF 直接解析；无可提取文字的页面渲染后 OCR，扫描 PDF 最多 40 页，单图最多 3000 万像素。OCR 文字和普通文件一样分块、按会话建立索引，可用于 RAG 与 Agent。音频转写和视频内容理解仍未实现。\n\n回答包含引用编号校验；RAG 问答额外调用一次模型核验事实依据，并检查核验返回的证据是否为来源原文的逐字片段。它是辅助核验，不保证模型事实绝对正"
+        },
+        {
+          "id": 6,
+          "name": "sharing.md",
+          "text": "录中。重开分享会创建新的口令，重新创建 Quick Tunnel 通常也会改变地址。\n\n电脑、C++/AI 服务、分享网关及 cloudflared 都需要持续运行。`Stop-QingLiao.cmd` 会先关闭公网分享。没有安装系统服务，没有修改路由器端口映射，也没有开放数据库端口。\n\n## 已验证\n\n`scripts/share-smoke.py` 实际通过公网域名验证：\n\n- 未输入分享口令不能访问应用 API；错误口令被拒绝。\n- 成功后使用 Secure / HttpOnly / SameSite Cookie，随后应用仍使用自己的账号鉴权。\n- 生产页面和 API 可访问，隐藏配置文件路径返回 404。\n- WebSocket 通过真实公网 WSS 建立连接，两个测试账号完成实时消息传递。\n\n分享"
+        }
+      ]
+    },
+    {
+      "question": "全是扫描图像的 PDF 最多能识别多少页？",
+      "answer": "根据资料，扫描 PDF 最多识别 40 页 [1][2]。",
+      "citation_check": {
+        "status": "passed",
+        "referenced_ids": [
+          1,
+          2
+        ],
+        "invalid_ids": [],
+        "note": "编号及来源范围校验，不等于事实正确性保证",
+        "grounding": "supported",
+        "evidence": [
+          {
+            "citation_id": 1,
+            "quote": "扫描 PDF 最多 40 页"
+          },
+          {
+            "citation_id": 2,
+            "quote": "40 页，单图最多 3000 万像素"
+          }
+        ],
+        "issues": []
+      },
+      "sources": [
+        {
+          "id": 1,
+          "name": "upgrade-v2.md",
+          "text": "。\n\n## 语义检索、OCR 与引用\n\n采用本地多语言 MiniLM 量化 ONNX 模型，生成 384 维语义向量；与原词法分数混合排序。没有模型文件时明确报错，不假装完成语义检索。安装依赖后运行 `python scripts/setup-ai-models.py` 下载模型。\n\n图片文字使用本地 RapidOCR 识别，支持中文和英文。文字 PDF 直接解析；无可提取文字的页面渲染后 OCR，扫描 PDF 最多 40 页，单图最多 3000 万像素。OCR 文字和普通文件一样分块、按会话建立索引，可用于 RAG 与 Agent。音频转写和视频内容理解仍未实现。\n\n回答包含引用编号校验；RAG 问答额外调用一次模型核验事实依据，并检查核验返回的证据是否为来源原文的逐字片段。它是辅助核验，不保证模型事实绝对正"
+        },
+        {
+          "id": 2,
+          "name": "upgrade-v2.md",
+          "text": " 40 页，单图最多 3000 万像素。OCR 文字和普通文件一样分块、按会话建立索引，可用于 RAG 与 Agent。音频转写和视频内容理解仍未实现。\n\n回答包含引用编号校验；RAG 问答额外调用一次模型核验事实依据，并检查核验返回的证据是否为来源原文的逐字片段。它是辅助核验，不保证模型事实绝对正确；界面会显示通过、需复核或未完成核验的状态。Agent 展示引用编号检查和真实工具执行记录。\n\n## TURN 与真实跨设备验收\n\n界面提供“音视频网络诊断”，不调用个人麦克风或摄像头。配置 TURN 后强制收集中继候选；只有实际收到 relay 候选才报告分配成功。可使用 TURN shared secret，或托管服务提供的 TURN_USERNAME / TURN_PASSWORD。\n\n当前用户没有 TURN"
+        }
+      ]
+    },
+    {
+      "question": "API 用哪个标准名称调用 V4.1 Flash？",
+      "answer": "调用 V4.1 Flash 应使用官方 API ID `deepseek-flash`；用户描述的 `dsv4.1flash` 是简写，后端会将其规范为该官方 ID，避免把非官方 ID 原样提交 [1][2]。",
+      "citation_check": {
+        "status": "passed",
+        "referenced_ids": [
+          1,
+          2
+        ],
+        "invalid_ids": [],
+        "note": "编号及来源范围校验，不等于事实正确性保证",
+        "grounding": "supported",
+        "evidence": [
+          {
+            "citation_id": 1,
+            "quote": "用户描述的 `dsv4.1flash` 对应当前官方 DeepSeek V4.1 Flash，官方 API ID 为 `deepseek-flash`。后端会规范该简写，避免将非官方 ID 原样提交。"
+          },
+          {
+            "citation_id": 2,
+            "quote": "用户描述的 `dsv4.1flash` 对应当前官方 DeepSeek V4.1 Flash，官方 API ID 为 `deepseek-flash`。后端会规范该简写，避免将非官方 ID 原样提交。"
+          }
+        ],
+        "issues": []
+      },
+      "sources": [
+        {
+          "id": 1,
+          "name": "deepseek.md",
+          "text": "://api.deepseek.com\nLLM_MODEL=deepseek-flash\n```\n\n用户描述的 `dsv4.1flash` 对应当前官方 DeepSeek V4.1 Flash，官方 API ID 为 `deepseek-flash`。后端会规范该简写，避免将非官方 ID 原样提交。官方来源：https://api-docs.deepseek.com/quick_start/agent_integrations/ 。\n\n```http\nPOST https://api.deepseek.com/chat/completions\nAuthorization: Bearer <DEEPSEEK_API_KEY>\nContent-Type: application/json\n```\n\n```json\n"
+        },
+        {
+          "id": 2,
+          "name": "deepseek.md",
+          "text": "# DeepSeek 官方商用接口配置\n\n当前已从校园 Qwen 网关迁移到 DeepSeek 官方 API，旧网关密钥已停用。请在项目 `.env` 填写 `DEEPSEEK_API_KEY`，密钥仅由 Python 后端读取。Windows 每次请求自动读取新值，Docker 部署需重新创建 AI 容器以更新环境变量。\n\n```dotenv\nDEEPSEEK_API_KEY=\nLLM_BASE_URL=https://api.deepseek.com\nLLM_MODEL=deepseek-flash\n```\n\n用户描述的 `dsv4.1flash` 对应当前官方 DeepSeek V4.1 Flash，官方 API ID 为 `deepseek-flash`。后端会规范该简写，避免将非官方 ID 原样提交。"
+        },
+        {
+          "id": 3,
+          "name": "deepseek.md",
+          "text": "message.tool_calls`，然后以 `role:\"tool\"`、`tool_call_id` 回传真实工具结果。当前关闭思考模式，以保持低延迟，不使用 Qwen 专用的 `enable_thinking` 字段。\n\n请求规范：https://api-docs.deepseek.com/api/create-chat-completion/ 。\n\nMockTransport 和独立本地模拟模型已验证标准请求头、官方端点、模型 ID、工具调用、错误分类与 RAG/Agent 链路。用户填写官方密钥后，2026-10-28 通过真实官方接口验证：Agent 执行 search_conversation，从合成聊天中检索“每人两千元”的预算，经过两次模型请求返回正确答案和一条引用。测试没有发送私人聊天，也没"
+        }
+      ]
+    },
+    {
+      "question": "九寨沟今天的门票现价是多少？",
+      "answer": "当前会话资料中未检索到足够依据。请上传相关 TXT、MD 或文字 PDF，或尝试使用资料中的关键词。",
+      "citation_check": null,
+      "sources": []
+    }
+  ]
+}

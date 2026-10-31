@@ -1,0 +1,948 @@
+:root {
+  color: #26332b;
+  background: #e8ebe8;
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+.app.wechat {
+  grid-template-columns: 68px 260px minmax(360px, 1fr);
+  max-width: none;
+  background: #f5f5f5;
+}
+.app.wechat.with-assistant {
+  grid-template-columns: 68px 260px minmax(360px, 1fr) 330px;
+}
+.rail {
+  background: #29332f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 0 20px;
+  gap: 24px;
+}
+.rail-avatar {
+  height: 38px;
+  width: 38px;
+  border-radius: 8px;
+  background: #8ccf94;
+  color: #244f32;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.rail > button {
+  color: #89968f;
+  font-size: 26px;
+  line-height: 1.1;
+  position: relative;
+  width: 100%;
+}
+.rail > button small {
+  display: block;
+  font-size: 9px;
+  color: inherit;
+  margin-top: 6px;
+}
+.rail > button.rail-active {
+  color: #7fd89a;
+}
+.rail .rail-logout {
+  margin-top: auto;
+  font-size: 25px;
+}
+.wechat .sidebar {
+  padding: 0;
+  background: #ebeeeb;
+  border-color: #dfe4df;
+}
+.list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 20px 13px;
+}
+.list-title h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0;
+}
+.list-title .tag {
+  font-size: 9px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-search {
+  display: flex;
+  align-items: center;
+  background: #dfe4df;
+  margin: 0 15px 18px;
+  padding: 1px 8px;
+  border-radius: 5px;
+  gap: 5px;
+  color: #7d897e;
+}
+.list-search input {
+  background: transparent;
+  border: none;
+  padding: 8px 0;
+  font-size: 11px;
+  box-shadow: none;
+}
+.list-search > button {
+  font-size: 19px;
+}
+.wechat .conversation-list {
+  margin: 0 0 15px;
+  max-height: 55vh;
+}
+.wechat .conversation {
+  border-radius: 0;
+  padding: 15px;
+  margin: 0;
+  gap: 10px;
+  min-height: 76px;
+}
+.wechat .conversation:hover {
+  background: #e0e5df;
+}
+.wechat .conversation.selected {
+  background: #d5ddd3;
+  box-shadow: none;
+}
+.wechat .avatar {
+  border-radius: 7px;
+  width: 43px;
+  min-width: 43px;
+  height: 43px;
+  background: #c4d8c2;
+  color: #49684a;
+}
+.conversation-copy {
+  min-width: 0;
+  flex: 1;
+}
+.conversation-copy strong {
+  font-size: 13px;
+}
+.wechat .conversation-copy small {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  margin-top: 6px;
+  color: #8a9588;
+}
+.conversation-extra {
+  height: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.conversation-extra time {
+  font-size: 9px;
+  color: #9ca69a;
+}
+.conversation-extra b {
+  background: #e26d62;
+  color: #fff;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 9px;
+  padding: 1px 4px;
+  font-size: 9px;
+  text-align: center;
+}
+.wechat .sidebar h3 {
+  margin: 12px 20px;
+  color: #9aa591;
+  font-size: 10px;
+}
+.wechat .users {
+  padding: 0 20px;
+}
+.sidebar-footer {
+  padding: 17px;
+  border-top: 1px solid #dfe4da;
+  color: #95a08d;
+  font-size: 9px;
+  margin-top: auto;
+}
+.online-dot {
+  display: inline-block;
+  background: #7ca96b;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.list-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: #8e9c86;
+  line-height: 2;
+  font-size: 12px;
+}
+.contact-list {
+  overflow: auto;
+  flex: 1;
+}
+.contact-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 13px 17px;
+  gap: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e5dc;
+  font-size: 13px;
+}
+.contact-row:hover {
+  background: #dfe5da;
+}
+.contact-row small {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+}
+.contact-row > span:last-child {
+  margin-left: auto;
+  color: #94a18a;
+}
+.wechat .chat {
+  background: #f5f6f3;
+}
+.wechat .chat header {
+  height: 84px;
+  padding: 20px 27px;
+  background: #f7f8f5;
+}
+.chat-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.wechat .chat-title h2 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.wechat .chat-title .connection {
+  font-size: 9px;
+}
+.header-actions {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  color: #77896b;
+}
+.header-actions button {
+  font-size: 21px;
+  padding: 5px;
+  line-height: 1;
+}
+.header-actions button:hover {
+  color: #328348;
+}
+.back-button {
+  display: none;
+  font-size: 30px;
+}
+.wechat .messages {
+  padding: 20px 27px;
+  background: #f1f3ee;
+}
+.wechat .day-label {
+  font-size: 10px;
+  color: #a6b09e;
+  margin: 0 0 25px;
+}
+.wechat .message {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+.wechat .message.mine {
+  flex-direction: row-reverse;
+}
+.message-avatar {
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  background: #dbe6d2;
+  display: grid;
+  place-items: center;
+  color: #6a815a;
+  font-size: 15px;
+}
+.mine .message-avatar {
+  background: #a9cba0;
+  color: #4a6d42;
+}
+.message-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: min(75%, 600px);
+  min-width: 0;
+}
+.mine .message-body {
+  align-items: flex-end;
+}
+.wechat .message-meta {
+  font-size: 10px;
+  margin-bottom: 7px;
+  color: #829174;
+}
+.wechat .bubble {
+  max-width: 100%;
+  font-size: 13px;
+  border-radius: 3px 9px 9px 9px;
+  position: relative;
+  border: 0;
+  padding: 10px 14px;
+  background: #fff;
+  box-shadow: 0 1px 2px #40503207;
+}
+.wechat .mine .bubble {
+  background: #a7df8f;
+  border-radius: 9px 3px 9px 9px;
+}
+.message-body > small {
+  font-size: 9px;
+  color: #a8b19f;
+  margin-top: 5px;
+}
+.wechat .composer {
+  background: #fff;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #e1e6da;
+  border-radius: 0;
+  padding: 10px 26px 17px;
+  position: relative;
+}
+.composer-tools {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #74856a;
+  margin-bottom: 6px;
+  min-height: 28px;
+}
+.composer-tools > button {
+  font-size: 23px;
+  padding: 0;
+}
+.composer-tools > button:hover {
+  color: #41914d;
+}
+.composer-tools > span {
+  flex: 1;
+}
+.composer-tools small {
+  font-size: 10px;
+}
+.recording {
+  color: #ce5148 !important;
+}
+.composer-tools .recording {
+  animation: pulse 1s infinite;
+}
+.composer-tools small button {
+  font-size: 10px;
+  text-decoration: underline;
+}
+.wechat .composer textarea {
+  height: 90px;
+  padding: 7px 0;
+  resize: none;
+  font-size: 13px;
+  background: transparent;
+}
+.wechat .composer-bottom {
+  justify-content: space-between;
+}
+.wechat .composer-bottom small {
+  margin: 0;
+  font-size: 9px;
+}
+.wechat .primary {
+  background: #4b975d;
+  border-radius: 5px;
+}
+.wechat .primary:hover {
+  background: #3e804d;
+}
+.wechat .composer-bottom .primary {
+  padding: 8px 23px;
+  font-size: 11px;
+}
+.wechat .assistant {
+  border-color: #e1e7db;
+}
+.wechat .assistant-heading {
+  height: 84px;
+  padding: 18px;
+}
+.assistant-heading > .icon {
+  margin-left: auto;
+}
+.wechat .ai-body {
+  padding: 22px 20px;
+}
+.wechat .ai-tabs {
+  padding: 0 20px;
+  gap: 20px;
+}
+.wechat .ai-intro h2 {
+  font-size: 20px;
+}
+.wechat .assistant .primary {
+  background: #3a7a4a;
+}
+.wechat .empty > span {
+  font-size: 48px;
+  color: #b5c7aa;
+}
+.wechat .welcome h2 {
+  font-size: 24px;
+  color: #77906a;
+}
+.wechat .welcome p {
+  line-height: 2.2;
+}
+.emoji-picker {
+  position: absolute;
+  bottom: 190px;
+  left: 15px;
+  background: white;
+  border: 1px solid #dfe6d7;
+  box-shadow: 0 8px 35px #26352120;
+  padding: 13px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  z-index: 5;
+}
+.emoji-picker button {
+  font-size: 23px;
+}
+.media-message {
+  white-space: normal;
+  max-width: 320px;
+}
+.bubble.has-media {
+  padding: 7px;
+  background: #fff !important;
+}
+.image-preview {
+  padding: 0;
+  display: block;
+}
+.image-preview img {
+  display: block;
+  max-width: 280px;
+  max-height: 280px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+.media-message video {
+  max-width: 320px;
+  max-height: 260px;
+  border-radius: 5px;
+  display: block;
+  background: #1e261f;
+}
+.media-message audio {
+  max-width: 280px;
+  height: 42px;
+  display: block;
+}
+.media-message .file-link {
+  font-size: 10px;
+  max-width: 280px;
+  overflow-wrap: anywhere;
+  text-align: left;
+  padding: 5px 3px;
+}
+.file-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  min-width: 210px;
+}
+.file-card > span {
+  font-size: 35px;
+  color: #83a36a;
+}
+.file-card strong {
+  display: block;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+.file-card small {
+  display: block;
+  margin-top: 8px;
+  font-size: 9px;
+}
+.image-lightbox,
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  background: #101b18d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.image-lightbox > img {
+  max-width: 95vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+.image-lightbox > button {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  font-size: 15px;
+}
+.message-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-bottom: 1px solid #dfe5d9;
+  background: #fff;
+}
+.message-search input {
+  padding: 8px;
+  font-size: 12px;
+}
+.message-search button {
+  font-size: 11px;
+  white-space: nowrap;
+}
+.search-results {
+  max-height: 250px;
+  overflow: auto;
+  padding: 15px 25px;
+  background: white;
+  border-bottom: 1px solid #d9e3d0;
+  font-size: 12px;
+}
+.search-results > strong {
+  font-size: 11px;
+  color: #638451;
+}
+.search-results > div {
+  padding: 12px 0;
+  border-bottom: 1px solid #eef1e8;
+}
+.search-results p {
+  margin: 6px 0 0;
+  white-space: pre-wrap;
+}
+.shared-modal {
+  width: min(540px, 95vw);
+  background: white;
+  border-radius: 13px;
+  padding: 24px;
+  max-height: 80vh;
+  overflow: auto;
+}
+.shared-modal header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.shared-modal h3 {
+  font-size: 17px;
+  margin: 0;
+}
+.shared-modal header > button {
+  font-size: 25px;
+}
+.shared-file {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  padding: 13px 0;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #edf1e6;
+}
+.shared-file > span {
+  font-size: 26px;
+  color: #89a677;
+}
+.shared-file > span:last-child {
+  margin-left: auto;
+  font-size: 19px;
+}
+.shared-file strong {
+  font-size: 12px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.shared-file small {
+  display: block;
+  font-size: 9px;
+  margin-top: 7px;
+}
+.agent-trace {
+  background: #f4f8ef;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 16px;
+}
+.agent-trace h4 {
+  margin: 5px 0 12px;
+}
+.agent-trace pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 10px;
+}
+.call-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: #17231ed9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+.call-window {
+  width: min(460px, 95vw);
+  border: 1px solid #667d6b70;
+  background: linear-gradient(145deg, #32493b, #1a2d24);
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 30px 100px #0007;
+  overflow: hidden;
+}
+.call-window.video-call {
+  width: min(850px, 95vw);
+}
+.call-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-size: 12px;
+  color: #bad1be;
+}
+.call-top > span:last-child {
+  font-size: 11px;
+}
+.call-stage {
+  position: relative;
+  min-height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.video-call .call-stage {
+  height: min(52vh, 460px);
+}
+.remote-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #1a2d24;
+}
+.remote-video.audio-only {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.local-video {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 160px;
+  height: 110px;
+  object-fit: cover;
+  border: 1px solid #fff6;
+  border-radius: 9px;
+  transform: scaleX(-1);
+  z-index: 3;
+}
+.call-person {
+  position: absolute;
+  text-align: center;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #24392b88;
+}
+.call-avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 22px;
+  background: #729c76;
+  color: white;
+  font-size: 43px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+}
+.call-person h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+.call-person p {
+  font-size: 12px;
+  color: #a9c4ad;
+}
+.call-duration {
+  text-align: center;
+  color: #bad4bc;
+  font-variant-numeric: tabular-nums;
+  font-size: 16px;
+  min-height: 26px;
+}
+.call-actions {
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+  padding: 25px 20px 50px;
+}
+.call-control {
+  position: relative;
+  border-radius: 50%;
+  background: #ffffff1a;
+  width: 56px;
+  height: 56px;
+  color: white;
+  font-size: 25px;
+}
+.call-control small {
+  position: absolute;
+  left: -15px;
+  right: -15px;
+  bottom: -25px;
+  font-size: 11px;
+  color: #bfd0c2;
+  white-space: nowrap;
+}
+.call-control.decline {
+  background: #d95b56;
+}
+.call-control.accept {
+  background: #4eaf6a;
+}
+.call-control.toggled {
+  background: #a6bca3;
+  color: #29442e;
+}
+.call-network-note {
+  display: block;
+  text-align: center;
+  padding: 0 20px 22px;
+  font-size: 9px;
+  color: #8eab96;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+@media (max-width: 1250px) {
+  .app.wechat {
+    grid-template-columns: 62px 230px minmax(320px, 1fr);
+  }
+  .app.wechat.with-assistant {
+    grid-template-columns: 62px 220px minmax(300px, 1fr) 300px;
+  }
+  .header-actions {
+    gap: 8px;
+  }
+  .wechat .chat header {
+    padding: 18px;
+  }
+  .wechat .messages {
+    padding: 20px;
+  }
+}
+@media (max-width: 1050px) {
+  .app.wechat.with-assistant {
+    grid-template-columns: 62px 230px minmax(320px, 1fr);
+  }
+  .wechat.with-assistant .assistant {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 340px;
+    z-index: 50;
+    box-shadow: -12px 0 50px #26381f22;
+  }
+  .wechat .message-body {
+    max-width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .app.wechat,
+  .app.wechat.with-assistant {
+    grid-template-columns: 60px 210px minmax(300px, 1fr);
+    height: 100dvh;
+    min-height: 0;
+  }
+  .wechat .sidebar {
+    position: static;
+    height: auto;
+  }
+  .wechat .chat {
+    height: auto;
+  }
+  .wechat .assistant {
+    grid-column: auto;
+    min-height: 0;
+  }
+  .wechat .composer-bottom small {
+    display: none;
+  }
+  .wechat .composer-bottom {
+    justify-content: flex-end;
+  }
+  .wechat .conversation-list {
+    max-height: 50vh;
+  }
+}
+@media (max-width: 650px) {
+  .app.wechat,
+  .app.wechat.with-assistant {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr);
+    height: 100dvh;
+  }
+  .wechat .rail {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .wechat .sidebar {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .wechat .chat {
+    display: none;
+  }
+  .wechat.mobile-chat .rail,
+  .wechat.mobile-chat .sidebar {
+    display: none;
+  }
+  .wechat.mobile-chat {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .wechat.mobile-chat .chat {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .back-button {
+    display: block;
+  }
+  .wechat .chat header {
+    height: 74px;
+    padding: 12px 15px;
+  }
+  .header-actions {
+    gap: 7px;
+  }
+  .header-actions button {
+    font-size: 21px;
+    padding: 3px;
+  }
+  .wechat .chat-title h2 {
+    font-size: 16px;
+  }
+  .wechat .messages {
+    padding: 16px 12px;
+  }
+  .wechat .message-body {
+    max-width: calc(100% - 48px);
+  }
+  .wechat .message-avatar {
+    width: 31px;
+    min-width: 31px;
+    height: 31px;
+  }
+  .wechat .composer {
+    padding: 8px 14px 14px;
+  }
+  .wechat .composer textarea {
+    height: 75px;
+  }
+  .wechat .composer-tools {
+    gap: 20px;
+  }
+  .wechat.with-assistant .assistant {
+    width: min(360px, 100vw);
+  }
+  .wechat .assistant-heading {
+    padding: 20px;
+  }
+  .image-preview img {
+    max-width: 230px;
+    max-height: 230px;
+  }
+  .media-message video {
+    max-width: 240px;
+  }
+  .media-message audio {
+    max-width: 235px;
+  }
+  .call-overlay {
+    padding: 10px;
+  }
+  .call-actions {
+    gap: 32px;
+  }
+  .local-video {
+    width: 110px;
+    height: 80px;
+  }
+  .list-title {
+    padding: 25px 20px 18px;
+  }
+  .wechat .conversation .avatar {
+    display: grid;
+  }
+  .wechat .conversation small {
+    display: block;
+  }
+  .wechat .conversation-copy strong {
+    font-size: 14px;
+  }
+  .wechat .conversation {
+    gap: 12px;
+    padding: 15px;
+  }
+  .wechat .sidebar h3 {
+    font-size: 11px;
+  }
+  .wechat .users button {
+    font-size: 13px;
+    gap: 10px;
+  }
+  .wechat .users {
+    padding: 0 20px;
+  }
+}

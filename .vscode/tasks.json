@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label":"青聊：首次配置与构建","type":"process","command":"powershell.exe","args":["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}/scripts/setup-windows.ps1"],"problemMatcher":[],"group":"build"},
+    {"label":"青聊：编译 C++","type":"process","command":"cmake","args":["--build","${workspaceFolder}/build/windows","--config","Release","--parallel","2"],"problemMatcher":"$msCompile","group":{"kind":"build","isDefault":true}},
+    {"label":"青聊：启动所有服务","type":"process","command":"powershell.exe","args":["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}/scripts/start-windows.ps1"],"problemMatcher":[]},
+    {"label":"青聊：停止所有服务","type":"process","command":"powershell.exe","args":["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}/scripts/stop-windows.ps1"],"problemMatcher":[]},
+    {"label":"青聊：AI 测试","type":"process","command":"${workspaceFolder}/.venv/Scripts/python.exe","args":["-m","pytest","tests","-q"],"problemMatcher":[]},
+    {"label":"青聊：完整浏览器验收","type":"process","command":"node","args":["scripts/e2e.cjs"],"problemMatcher":[]}
+  ]
+}

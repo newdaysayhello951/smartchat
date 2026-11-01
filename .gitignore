@@ -19,3 +19,5 @@ basepy/
 btfresh/
 .env.*
 !.env.example
+
+pytest-of-*/

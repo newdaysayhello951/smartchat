@@ -1,0 +1,35 @@
+[
+  {
+    "concurrency": 8,
+    "requests": 300,
+    "seconds": 2.03,
+    "p50_ms": 38.65,
+    "p95_ms": 114.95,
+    "errors": 0,
+    "examples": [],
+    "duplicate_id_conflicts": 0,
+    "unique_messages_acknowledged": 100
+  },
+  {
+    "concurrency": 32,
+    "requests": 300,
+    "seconds": 1.1,
+    "p50_ms": 90.21,
+    "p95_ms": 150.57,
+    "errors": 0,
+    "examples": [],
+    "duplicate_id_conflicts": 0,
+    "unique_messages_acknowledged": 100
+  },
+  {
+    "concurrency": 96,
+    "requests": 300,
+    "seconds": 1.0,
+    "p50_ms": 60.27,
+    "p95_ms": 88.17,
+    "errors": 0,
+    "examples": [],
+    "duplicate_id_conflicts": 0,
+    "unique_messages_acknowledged": 100
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "parallel_requests_per_operation": 16,
+  "workers": 8,
+  "init_single_id": true,
+  "concurrent_same_chunk": true,
+  "complete_single_id": true,
+  "download_sha256": "116e859fa22e091d10f53b091ca92be974140fb4adbca12c76cceb86e2600e6e"
+}

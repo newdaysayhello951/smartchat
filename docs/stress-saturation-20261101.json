@@ -2,27 +2,38 @@
   {
     "concurrency": 128,
     "requests": 1500,
-    "seconds": 10.47,
-    "p50_ms": 726.42,
-    "p95_ms": 1138.94,
+    "seconds": 9.65,
+    "p50_ms": 718.24,
+    "p95_ms": 1259.45,
     "errors": 0,
     "examples": [],
     "duplicate_id_conflicts": 0,
-    "unique_messages_acknowledged": 500
+    "unique_messages_acknowledged": 500,
+    "persisted_rows": 500,
+    "persisted_unique_client_ids": 500,
+    "sequence_collisions": 0,
+    "post_load_health": {
+      "status": "ok"
+    }
   },
   {
     "concurrency": 256,
     "requests": 1500,
-    "seconds": 12.35,
-    "p50_ms": 1691.16,
-    "p95_ms": 3322.74,
-    "errors": 17,
+    "seconds": 12.44,
+    "p50_ms": 1598.18,
+    "p95_ms": 3296.52,
+    "errors": 2,
     "examples": [
-      "[WinError 10061] \u7531\u4e8e\u76ee\u6807\u8ba1\u7b97\u673a\u79ef\u6781\u62d2\u7edd\uff0c\u65e0\u6cd5\u8fde\u63a5\u3002",
       "[WinError 10061] \u7531\u4e8e\u76ee\u6807\u8ba1\u7b97\u673a\u79ef\u6781\u62d2\u7edd\uff0c\u65e0\u6cd5\u8fde\u63a5\u3002",
       "[WinError 10061] \u7531\u4e8e\u76ee\u6807\u8ba1\u7b97\u673a\u79ef\u6781\u62d2\u7edd\uff0c\u65e0\u6cd5\u8fde\u63a5\u3002"
     ],
     "duplicate_id_conflicts": 0,
-    "unique_messages_acknowledged": 500
+    "unique_messages_acknowledged": 500,
+    "persisted_rows": 500,
+    "persisted_unique_client_ids": 500,
+    "sequence_collisions": 0,
+    "post_load_health": {
+      "status": "ok"
+    }
   }
 ]

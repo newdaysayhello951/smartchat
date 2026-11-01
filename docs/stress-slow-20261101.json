@@ -1,0 +1,20 @@
+[
+  {
+    "partial_headers": 32,
+    "status": 200,
+    "latency_ms": 8.17
+  },
+  {
+    "partial_headers": 128,
+    "status": 200,
+    "latency_ms": 7.69
+  },
+  {
+    "partial_headers": 300,
+    "status": 200,
+    "latency_ms": 5.1
+  },
+  {
+    "after_close_status": 200
+  }
+]

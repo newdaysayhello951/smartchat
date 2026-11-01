@@ -125,7 +125,14 @@ long long number(const std::string &s) {
 std::string decode(std::string s) {
   std::string o;
   for (size_t i = 0; i < s.size(); i++) {
-    if (s[i] == '%' && i + 2 < s.size()) {
+    if (s[i] == '%') {
+      auto hex_digit = [](unsigned char c) {
+        return (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') ||
+               (c >= 'A' && c <= 'F');
+      };
+      if (i + 2 >= s.size() || !hex_digit(s[i + 1]) ||
+          !hex_digit(s[i + 2]))
+        throw Error(400, "invalid encoding");
       auto h = s.substr(i + 1, 2);
       char *end = nullptr;
       long v = strtol(h.c_str(), &end, 16);

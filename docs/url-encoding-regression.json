@@ -1,0 +1,38 @@
+[
+  {
+    "input": "%",
+    "status": 400
+  },
+  {
+    "input": "%2",
+    "status": 400
+  },
+  {
+    "input": "%+1",
+    "status": 400
+  },
+  {
+    "input": "%GG",
+    "status": 400
+  },
+  {
+    "input": "%2G",
+    "status": 400
+  },
+  {
+    "input": "%41",
+    "status": 200
+  },
+  {
+    "input": "%2b",
+    "status": 200
+  },
+  {
+    "input": "%E4%B8%AD",
+    "status": 200
+  },
+  {
+    "input": "a+b",
+    "status": 200
+  }
+]

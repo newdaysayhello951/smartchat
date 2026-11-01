@@ -32,3 +32,6 @@ for workers in (8,32,96):
  reports.append(report);print(json.dumps(report),flush=True)
  if errors:break
 Path('docs/stress-concurrency-20261101.json').write_text(json.dumps(reports,indent=2),encoding='utf-8')
+
+# Persist diagnostics before signaling a failed acceptance run.
+sys.exit(1 if any(r["errors"] or r["duplicate_id_conflicts"] or r["persisted_rows"] != 100 or r["persisted_unique_client_ids"] != 100 or r["sequence_collisions"] for r in reports) else 0)

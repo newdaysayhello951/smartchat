@@ -1,0 +1,162 @@
+[
+  {
+    "timestamp": "2026-11-01T10:43:57.8250173+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:43:57.9436290+08:00",
+    "Id": 22656,
+    "CPU": 224.046875,
+    "WorkingSet64": 18231296,
+    "HandleCount": 241,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:43:59.0147663+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:43:59.0244469+08:00",
+    "Id": 22656,
+    "CPU": 225.9375,
+    "WorkingSet64": 18251776,
+    "HandleCount": 256,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:00.0591605+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:00.0617792+08:00",
+    "Id": 22656,
+    "CPU": 227.5625,
+    "WorkingSet64": 18669568,
+    "HandleCount": 261,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:01.0916983+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:01.0934936+08:00",
+    "Id": 22656,
+    "CPU": 229.734375,
+    "WorkingSet64": 18653184,
+    "HandleCount": 265,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:02.1277912+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:02.1304081+08:00",
+    "Id": 22656,
+    "CPU": 231.984375,
+    "WorkingSet64": 18341888,
+    "HandleCount": 259,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:03.1554523+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:03.1582799+08:00",
+    "Id": 22656,
+    "CPU": 234.140625,
+    "WorkingSet64": 18456576,
+    "HandleCount": 247,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:04.1817433+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:04.1860631+08:00",
+    "Id": 22656,
+    "CPU": 236.1875,
+    "WorkingSet64": 18366464,
+    "HandleCount": 249,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:05.2080534+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:05.2084977+08:00",
+    "Id": 22656,
+    "CPU": 238.078125,
+    "WorkingSet64": 18542592,
+    "HandleCount": 249,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:06.2271905+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:06.2281810+08:00",
+    "Id": 22656,
+    "CPU": 240.78125,
+    "WorkingSet64": 18522112,
+    "HandleCount": 253,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:07.2386289+08:00",
+    "Id": 18184,
+    "CPU": 0.0625,
+    "WorkingSet64": 11907072,
+    "HandleCount": 207,
+    "threads": 13
+  },
+  {
+    "timestamp": "2026-11-01T10:44:07.2390540+08:00",
+    "Id": 22656,
+    "CPU": 242.1875,
+    "WorkingSet64": 17805312,
+    "HandleCount": 232,
+    "threads": 13
+  }
+]

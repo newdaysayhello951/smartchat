@@ -1,0 +1,38 @@
+[
+  {
+    "workers": 64,
+    "requests": 1500,
+    "errors": 0,
+    "error_examples": [],
+    "statuses": {
+      "HTTP/1.1 200 OK": 1500
+    }
+  },
+  {
+    "workers": 128,
+    "requests": 1500,
+    "errors": 0,
+    "error_examples": [],
+    "statuses": {
+      "HTTP/1.1 200 OK": 1500
+    }
+  },
+  {
+    "workers": 256,
+    "requests": 1500,
+    "errors": 0,
+    "error_examples": [],
+    "statuses": {
+      "HTTP/1.1 200 OK": 1500
+    }
+  },
+  {
+    "workers": 512,
+    "requests": 1500,
+    "errors": 0,
+    "error_examples": [],
+    "statuses": {
+      "HTTP/1.1 200 OK": 1500
+    }
+  }
+]

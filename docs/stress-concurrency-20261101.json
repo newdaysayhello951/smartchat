@@ -2,34 +2,52 @@
   {
     "concurrency": 8,
     "requests": 300,
-    "seconds": 2.03,
-    "p50_ms": 38.65,
-    "p95_ms": 114.95,
+    "seconds": 1.32,
+    "p50_ms": 31.81,
+    "p95_ms": 52.03,
     "errors": 0,
     "examples": [],
     "duplicate_id_conflicts": 0,
-    "unique_messages_acknowledged": 100
+    "unique_messages_acknowledged": 100,
+    "persisted_rows": 100,
+    "persisted_unique_client_ids": 100,
+    "sequence_collisions": 0,
+    "post_load_health": {
+      "status": "ok"
+    }
   },
   {
     "concurrency": 32,
     "requests": 300,
-    "seconds": 1.1,
-    "p50_ms": 90.21,
-    "p95_ms": 150.57,
+    "seconds": 1.31,
+    "p50_ms": 133.96,
+    "p95_ms": 158.86,
     "errors": 0,
     "examples": [],
     "duplicate_id_conflicts": 0,
-    "unique_messages_acknowledged": 100
+    "unique_messages_acknowledged": 100,
+    "persisted_rows": 100,
+    "persisted_unique_client_ids": 100,
+    "sequence_collisions": 0,
+    "post_load_health": {
+      "status": "ok"
+    }
   },
   {
     "concurrency": 96,
     "requests": 300,
-    "seconds": 1.0,
-    "p50_ms": 60.27,
-    "p95_ms": 88.17,
+    "seconds": 1.63,
+    "p50_ms": 463.08,
+    "p95_ms": 502.7,
     "errors": 0,
     "examples": [],
     "duplicate_id_conflicts": 0,
-    "unique_messages_acknowledged": 100
+    "unique_messages_acknowledged": 100,
+    "persisted_rows": 100,
+    "persisted_unique_client_ids": 100,
+    "sequence_collisions": 0,
+    "post_load_health": {
+      "status": "ok"
+    }
   }
 ]

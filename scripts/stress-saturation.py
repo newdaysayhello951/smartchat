@@ -33,3 +33,6 @@ for workers in (128,256,512):
  if errors:break
 Path('docs/stress-saturation-20261101.json').write_text(json.dumps(reports,indent=2),encoding='utf-8')
 
+
+# Persist diagnostics before signaling a failed acceptance run.
+sys.exit(1 if any(r["errors"] or r["duplicate_id_conflicts"] or r["persisted_rows"] != 500 or r["persisted_unique_client_ids"] != 500 or r["sequence_collisions"] for r in reports) else 0)

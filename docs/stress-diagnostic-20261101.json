@@ -1,0 +1,53 @@
+[
+  {
+    "concurrency": 128,
+    "requests": 1500,
+    "seconds": 6.5,
+    "p50_ms": 219.1,
+    "p95_ms": 959.45,
+    "errors": 0,
+    "examples": [],
+    "duplicate_id_conflicts": 0,
+    "unique_messages_acknowledged": 500,
+    "persisted_rows": 500,
+    "persisted_unique_client_ids": 500,
+    "sequence_collisions": 0,
+    "post_load_health": {
+      "status": "ok"
+    }
+  },
+  {
+    "concurrency": 256,
+    "requests": 1500,
+    "seconds": 7.17,
+    "p50_ms": 277.78,
+    "p95_ms": 555.81,
+    "errors": 0,
+    "examples": [],
+    "duplicate_id_conflicts": 0,
+    "unique_messages_acknowledged": 500,
+    "persisted_rows": 500,
+    "persisted_unique_client_ids": 500,
+    "sequence_collisions": 0,
+    "post_load_health": {
+      "status": "ok"
+    }
+  },
+  {
+    "concurrency": 512,
+    "requests": 1500,
+    "seconds": 6.97,
+    "p50_ms": 753.92,
+    "p95_ms": 1472.55,
+    "errors": 0,
+    "examples": [],
+    "duplicate_id_conflicts": 0,
+    "unique_messages_acknowledged": 500,
+    "persisted_rows": 500,
+    "persisted_unique_client_ids": 500,
+    "sequence_collisions": 0,
+    "post_load_health": {
+      "status": "ok"
+    }
+  }
+]
